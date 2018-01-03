@@ -10,5 +10,8 @@ class StaticPageControllerTest < ActionDispatch::IntegrationTest
     get static_page_Help_url
     assert_response :success
   end
-
+  test "should get About" do
+  get static_page_About_url
+  assert_response :success
+  end
 end
